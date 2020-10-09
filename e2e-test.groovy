@@ -3,7 +3,9 @@ pipeline {
     stages {
         stage('run unit test') {
             steps {
-                echo 'Hello, Maven'
+                bash '''#!/bin/bash
+                mvn clean install
+                '''
             }
         }
     }
