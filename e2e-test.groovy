@@ -4,7 +4,7 @@ pipeline {
         stage('run unit test') {
             steps {
                 bash '''#!/bin/bash
-                mvn clean install
+                -javaagent:src/main/resources/jacocoagent.jar=destfile=target/jacoco-it.exec,append=true
                 '''
             }
         }
