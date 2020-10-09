@@ -1,0 +1,4 @@
+# Created at 2020-10-09T13:04:10.744
+Boot Manifest-JAR contains absolute paths in classpath 'D:\Unit_testing\LSEG-UTestReport\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+
