@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Example') {
             steps {
-                javac -version
+                bat 'mvn clean install'
             }
         }
     }
