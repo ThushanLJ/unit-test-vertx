@@ -3,9 +3,7 @@ pipeline {
     stages {
         stage('run unit test') {
             steps {
-                sh script: """
-                ./start.sh
-                """
+                sh "mvn clean install"
             }
         }
     }
