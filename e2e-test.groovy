@@ -3,7 +3,8 @@ pipeline {
     stages {
         stage('Example') {
             steps {
-                bat 'mvn clean install'
+                bat 'java -javaagent:src/main/resources/jacocoagent.jar=destfile=target/jacoco-it.exec,append=true'
+                bat 'kill -15'
             }
         }
     }
