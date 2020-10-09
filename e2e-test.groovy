@@ -1,9 +1,12 @@
 pipeline {
     agent any
+    tools {
+        maven 'apache-maven-3.0.1'
+    }
     stages {
-        stage('run unit test') {
+        stage('Example') {
             steps {
-                sh "mvn clean install"
+                sh 'mvn --version'
             }
         }
     }
